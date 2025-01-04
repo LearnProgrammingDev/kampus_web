@@ -1,0 +1,30 @@
+RewriteEngine on
+
+#RewriteCond $1 !^(index\.php)
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.+)$ index.php/$1 [L]
+
+RewriteRule ^berita$ index.php?page=data_berita [L]
+RewriteRule ^dosen$ index.php?page=data_dosen [L]
+RewriteRule ^tambah_dosen$ index.php?page=tambah_dosen [L]
+RewriteRule ^galery$ index.php?page=data_galery [L]
+RewriteRule ^tambah_galery$ index.php?page=tambah_galery [L]
+RewriteRule ^info$ index.php?page=data_info [L]
+RewriteRule ^tambah_info$ index.php?page=tambah_info [L]
+RewriteRule ^motivasi$ index.php?page=data_motivasi [L]
+RewriteRule ^tambah_motivasi$ index.php?page=tambah_motivasi [L]
+RewriteRule ^sejarah$ index.php?page=data_sejarah [L]
+RewriteRule ^tambah_sejarah$ index.php?page=tambah_sejarah [L]
+RewriteRule ^testimoni$ index.php?page=data_testimoni [L]
+RewriteRule ^tambah_testimoni$ index.php?page=tambah_testimoni [L]
+RewriteRule ^kategori$ index.php?page=data_kategori [L]
+RewriteRule ^tambah_kategori index.php?page=tambah_kategori [L]
+RewriteRule ^tujuan$ index.php?page=data_tujuan [L]
+RewriteRule ^visi&misi$ index.php?page=data_visi_misi [L]
+RewriteRule ^mahasiswa$ index.php?page=data_mahasiswa [L]
+RewriteRule ^tambah_mahasiswa$ index.php?page=tambah_mahasiswa [L]
+RewriteRule ^pengumuman$ index.php?page=data_pengumuman [L]
+#RewriteRule ^tambah_pengumuman$ index.php?page=tamabh_pengumuman [L]
+
+Options All -Indexes

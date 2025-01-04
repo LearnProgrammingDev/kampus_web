@@ -1,0 +1,21 @@
+RewriteEngine on
+
+RewriteCond $1 !^(index\.php)
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.+)$ index.php/$1 [L]
+
+RewriteRule ^berita$ index.php?page=list_berita [L]
+RewriteRule ^info$ index.php?page=data_info [L]
+RewriteRule ^visi&misi$ index.php?page=data_visi_misi [L]
+RewriteRule ^struktur&organisasi$ index.php?page=data_struktur_organisasi [L]
+RewriteRule ^motivasi$ index.php?page=data_motivasi [L]
+RewriteRule ^biodosen$ index.php?page=bio_dosen [L]
+RewriteRule ^testimoni$ index.php?page=list_testimoni [L]
+RewriteRule ^sejarah$ index.php?page=data_sejarah [L]
+RewriteRule ^detail&sejarah$ index.php?page=detail_sejarah [L]
+RewriteRule ^galery$ index.php?page=list_galery [L]
+RewriteRule ^home$ index.php?page=index [L]
+
+
+Options All -Indexes
